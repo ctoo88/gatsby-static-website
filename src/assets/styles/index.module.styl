@@ -1,35 +1,53 @@
 @import "common.css";
 
-.banner {
-  text-align: center;
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  background-color: #20232a;
+  color: #ffffff;
   .logo {
-    height: 80px;
+    position: absolute;
+    top: 15px;
+    width: 24px;
+    height: 20px;
     background: url(../img/logo.svg) no-repeat 50%;
   }
+  .nav {
+    width: 60%;
+    height: 100%;
+    margin-left: 50px;
+    .nav-link,
+    .nav-link-active {
+      padding: 0 10px;
+      line-height: 50px;
+      color: #ffffff;
+    }
+    .nav-link-active {
+      color: rgb(97, 218, 251);
+    }
+  }
 }
-.block-content {
-  padding: 16px;
-  line-height: 1.5;
-  border-bottom: .5px solid #ddd;
-  font-size: 14px;
-  color: #212121;
+
+.banner {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #282c34;
+  color: #ffffff;
+  .title {
+    color: #61dafb;
+    text-align: center;
+    font-size: 45px;
+  }
 }
-.block-title {
-  color: rgba(0,0,0,.54);
-  padding: 32px 16px 16px;
-  line-height: 16px;
-  font-weight: 500;
-  font-size: 14px;
-}
-.list-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  border-top: .5px solid #ddd;
-  border-bottom: .5px solid #ddd;
-  color: #000;
+
+.content {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
 }

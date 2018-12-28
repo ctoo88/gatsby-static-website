@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "gatsby";
 
 import Header from '../components/Header';
 import Styles from '../assets/styles/index.module.styl';
@@ -7,10 +6,14 @@ import Styles from '../assets/styles/index.module.styl';
 
 const About = () => (
   <div>
-    <Header headerText="About" />
+    <Header curPage="about" />
 
-    <p className={Styles.blockContent}>page about</p>
-    <Link to="/">home</Link>
+    <div className={Styles.banner}>
+      <h1 className={Styles.title}>About</h1>
+      <p className={Styles.content}>A static content-oriented website built with Gatsby.</p>
+    </div>
+
+    <div className={Styles.content}>About Page</div>
   </div>
 );
 
