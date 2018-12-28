@@ -3,7 +3,6 @@ import React from 'react';
 import Header from '../components/Header';
 import Styles from '../assets/styles/index.module.styl';
 
-
 const About = () => (
   <div>
     <Header curPage="about" />
